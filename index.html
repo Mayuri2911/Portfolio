@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+  <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <!-- <img src="images/Logo.png" class="logo"> -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+           <h1>Hi, I am <span>Mayuri</span> <br>From India</h1>
+        </div>
+    </div>
+    </div>
+    <div id="about">
+     <div class="container">
+      <div class="row">
+<div class="about-col-1"><img src="images/user.png"></div>
+<div class="about-col-2"><h1 class="sub-title">About Me</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempora alias a id sapiente nihil ea dolorem reiciendis dolores, nemo debitis rerum eos, reprehenderit ducimus necessitatibus sunt repellat similique eum.
+        <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi magnam est perspiciatis esse repellat culpa velit sint vero odit reiciendis.
+    </p>
+    <div class="tab-titles active-tab">
+      <p class="tab-links active-link" onclick="opnetab('skills', event)">Skills</p>
+<p class="tab-links" onclick="opnetab('experience', event)">Experience</p>
+<p class="tab-links" onclick="opnetab('education', event)">Education</p>
+
+    </div>
+    <div class="tab-content" id="skills">
+    <ul>
+        <li>
+            <span>Backend Development (.NET)</span><br>
+            C#, ASP.NET, ASP.NET MVC, ASP.NET Core, Web API, ADO.NET, Entity Framework
+        </li>
+
+        <li>
+            <span>Frontend Basics</span><br>
+            HTML, CSS, Bootstrap, jQuery
+        </li>
+
+        <li>
+            <span>Database Management</span><br>
+            SQL Server, PostgreSQL
+        </li>
+
+        <li>
+            <span>Tools & Platforms</span><br>
+            Visual Studio, Git, GitHub, Postman, SSMS, JIRA, IIS Hosting
+        </li>
+
+        <li>
+            <span>Cloud Platform</span><br>
+            Microsoft Azure
+        </li>
+    </ul>
+</div>
+
+   <div class="tab-content" id="experience">
+    <ul>
+        <li>
+            <span>Sep 2025 – Present</span><br>
+            Junior Software Engineer – Enhanced Software Solutions Pvt. Ltd.
+        </li>
+
+        <li>
+            <span>May 2025 – Aug 2025</span><br>
+            Junior Software Engineer – 3Di Systems Solutions Pvt. Ltd.
+        </li>
+
+        <li>
+            <span>2024 – Apr 2025</span><br>
+            Junior Software Engineer – Zentech Info Solutions Pvt. Ltd.
+        </li>
+    </ul>
+</div>
+<div class="tab-content" id="education">
+    <ul>
+        <li>
+            <span>2019 – 2022</span><br>
+            Bachelor of Computer Science (B.Sc. CS) – University of Mumbai
+        </li>
+
+        <li>
+            <span>2017 – 2019</span><br>
+            Higher Secondary Certificate (HSC) – V.K. Krishna Menon College
+        </li>
+    </ul>
+</div>
+</div>
+      </div>
+     </div>
+    </div>
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function opnetab(tabname, event) {
+
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
