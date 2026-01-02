@@ -1,127 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-  <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
 </head>
+
 <body>
     <div id="header">
-    <div class="container">
-        <nav>
-            <!-- <img src="images/Logo.png" class="logo"> -->
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+        <div class="container">
+            <nav>
+                <!-- <img src="images/Logo.png" class="logo"> -->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
 
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>Software Engineer</p>
-           <h1>Hi, I am <span>Mayuri</span> <br>From India</h1>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I am <span>Mayuri</span> <br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="images/user.png"></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Software Engineer specializing in .NET backend development, with strong knowledge of RESTful
+                        APIs, database management, and application hosting and deployment. Experienced in building
+                        scalable, secure, and efficient backend solutions. Passionate about continuous learning and
+                        delivering high-quality software projects that solve real-world problems.
+                    </p>
+
+
+                    <div class="tab-titles active-tab">
+                        <p class="tab-links active-link" onclick="opnetab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opnetab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opnetab('education', event)">Education</p>
+
+                    </div>
+                    <div class="tab-content" id="skills">
+                        <ul>
+                            <li>
+                                <span>Backend Development (.NET)</span><br>
+                                C#, ASP.NET, ASP.NET MVC, ASP.NET Core, Web API, ADO.NET, Entity Framework
+                            </li>
+
+                            <li>
+                                <span>Frontend Basics</span><br>
+                                HTML, CSS, Bootstrap, jQuery
+                            </li>
+
+                            <li>
+                                <span>Database Management</span><br>
+                                SQL Server, PostgreSQL
+                            </li>
+
+                            <li>
+                                <span>Tools & Platforms</span><br>
+                                Visual Studio, Git, GitHub, Postman, SSMS, JIRA, IIS Hosting
+                            </li>
+
+                            <li>
+                                <span>Cloud Platform</span><br>
+                                Microsoft Azure
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li>
+                                <span>Sep 2025 – Present</span><br>
+                                Junior Software Engineer – Enhanced Software Solutions Pvt. Ltd.
+                            </li>
+
+                            <li>
+                                <span>May 2025 – Aug 2025</span><br>
+                                Junior Software Engineer – 3Di Systems Solutions Pvt. Ltd.
+                            </li>
+
+                            <li>
+                                <span>2024 – Apr 2025</span><br>
+                                Junior Software Engineer – Zentech Info Solutions Pvt. Ltd.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li>
+                                <span>2019 – 2022</span><br>
+                                Bachelor of Computer Science (B.Sc. CS) – University of Mumbai
+                            </li>
+
+                            <li>
+                                <span>2017 – 2019</span><br>
+                                Higher Secondary Certificate (HSC) – V.K. Krishna Menon College
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------services------------------------- -->
+
+    <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+          <i class="fa-solid fa-code"></i>
+             <h3>Custom Web Application Development</h3>
+            <p>Secure and scalable ASP.NET web applications tailored to your business needs, including dashboards, portals, cloud deployment, and production support using Azure and IIS, including bug fixes, performance improvements, and maintenance.</p>
+         <a href="#">Learn More</a>
+
+            </div>
+               <div>
+             <i class="fa-solid fa-plug"></i>
+                <h2>REST API Development</h2>
+                <p>Fast and secure APIs for web and mobile applications, ensuring smooth integration between frontend, backend, and third-party services.</p>
+                <a href="#">Learn More</a>
+            </div>
+               <div>
+                 <i class="fa-solid fa-database"></i>
+                <h2>Database Design & Optimization</h2>
+                <p>Efficient database design and performance tuning using SQL Server and PostgreSQL for reliable and high-speed data handling.</p>
+                <a href="#">Learn More</a>
+            </div>
+             
         </div>
     </div>
     </div>
-    <div id="about">
-     <div class="container">
-      <div class="row">
-<div class="about-col-1"><img src="images/user.png"></div>
-<div class="about-col-2"><h1 class="sub-title">About Me</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis tempora alias a id sapiente nihil ea dolorem reiciendis dolores, nemo debitis rerum eos, reprehenderit ducimus necessitatibus sunt repellat similique eum.
-        <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi magnam est perspiciatis esse repellat culpa velit sint vero odit reiciendis.
-    </p>
-    <div class="tab-titles active-tab">
-      <p class="tab-links active-link" onclick="opnetab('skills', event)">Skills</p>
-<p class="tab-links" onclick="opnetab('experience', event)">Experience</p>
-<p class="tab-links" onclick="opnetab('education', event)">Education</p>
+       <!-------------------------------------portfolio------------------------------------------------->
 
-    </div>
-    <div class="tab-content" id="skills">
-    <ul>
-        <li>
-            <span>Backend Development (.NET)</span><br>
-            C#, ASP.NET, ASP.NET MVC, ASP.NET Core, Web API, ADO.NET, Entity Framework
-        </li>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                     <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Expense Tracker Application</h3>
+                        <p>
+                           A user-friendly expense tracking application that helps users record daily expenses,
+                            categorize spending, and monitor monthly budgets. The system provides summary reports and insights to improve financial management.
+                            Designed with a clean UI and secure data handling.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
 
-        <li>
-            <span>Frontend Basics</span><br>
-            HTML, CSS, Bootstrap, jQuery
-        </li>
+                    </div>
+                     </div>
+                  <div class="work">
+                    <img src="images/work2.png">
+                     <div class="layer">
+                        <h3>Employee Onboarding Application </h3>
+                        <p>
+                            A role-based employee onboarding system where newly joined employees receive automated joining emails and upload required documents. HR can manage onboarding processes, view employee profiles, documents, and generate reports. 
+                            The system ensures secure access using JWT-based authentication and authorization.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
 
-        <li>
-            <span>Database Management</span><br>
-            SQL Server, PostgreSQL
-        </li>
+                    </div>
+                </div>
+                  <div class="work">
+                    <img src="images/work3.png">
+                     <div class="layer">
+                        <h3>Emp WEB API  Application </h3>
+                        <p>
+                         A secure RESTful Web API developed to manage employee data with full CRUD operations. Implemented JWT authentication for role-based access and integrated Swagger for API documentation and testing. 
+                         Designed for scalability and seamless frontend integration.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
 
-        <li>
-            <span>Tools & Platforms</span><br>
-            Visual Studio, Git, GitHub, Postman, SSMS, JIRA, IIS Hosting
-        </li>
+                    </div>
+                </div>
+                  </div>
+                  <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
 
-        <li>
-            <span>Cloud Platform</span><br>
-            Microsoft Azure
-        </li>
-    </ul>
-</div>
+        function opnetab(tabname, event) {
 
-   <div class="tab-content" id="experience">
-    <ul>
-        <li>
-            <span>Sep 2025 – Present</span><br>
-            Junior Software Engineer – Enhanced Software Solutions Pvt. Ltd.
-        </li>
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
 
-        <li>
-            <span>May 2025 – Aug 2025</span><br>
-            Junior Software Engineer – 3Di Systems Solutions Pvt. Ltd.
-        </li>
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
 
-        <li>
-            <span>2024 – Apr 2025</span><br>
-            Junior Software Engineer – Zentech Info Solutions Pvt. Ltd.
-        </li>
-    </ul>
-</div>
-<div class="tab-content" id="education">
-    <ul>
-        <li>
-            <span>2019 – 2022</span><br>
-            Bachelor of Computer Science (B.Sc. CS) – University of Mumbai
-        </li>
-
-        <li>
-            <span>2017 – 2019</span><br>
-            Higher Secondary Certificate (HSC) – V.K. Krishna Menon College
-        </li>
-    </ul>
-</div>
-</div>
-      </div>
-     </div>
-    </div>
-   <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-content");
-
-    function opnetab(tabname, event) {
-
-        for (let tablink of tablinks) {
-            tablink.classList.remove("active-link");
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
 
-        for (let tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
 
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
+
+      
+
+    </script>
 
 </body>
+
 </html>
