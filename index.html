@@ -15,14 +15,15 @@
         <div class="container">
             <nav>
                 <!-- <img src="images/Logo.png" class="logo"> -->
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars"  onclick="openemenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Software Engineer</p>
@@ -118,79 +119,125 @@
     <!-- --------------------------services------------------------- -->
 
     <div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-          <i class="fa-solid fa-code"></i>
-             <h3>Custom Web Application Development</h3>
-            <p>Secure and scalable ASP.NET web applications tailored to your business needs, including dashboards, portals, cloud deployment, and production support using Azure and IIS, including bug fixes, performance improvements, and maintenance.</p>
-         <a href="#">Learn More</a>
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Custom Web Application Development</h3>
+                    <p>Secure and scalable ASP.NET web applications tailored to your business needs, including
+                        dashboards, portals, cloud deployment, and production support using Azure and IIS, including bug
+                        fixes, performance improvements, and maintenance.</p>
+                    <a href="#">Learn More</a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-plug"></i>
+                    <h2>REST API Development</h2>
+                    <p>Fast and secure APIs for web and mobile applications, ensuring smooth integration between
+                        frontend, backend, and third-party services.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Design & Optimization</h2>
+                    <p>Efficient database design and performance tuning using SQL Server and PostgreSQL for reliable and
+                        high-speed data handling.</p>
+                    <a href="#">Learn More</a>
+                </div>
 
             </div>
-               <div>
-             <i class="fa-solid fa-plug"></i>
-                <h2>REST API Development</h2>
-                <p>Fast and secure APIs for web and mobile applications, ensuring smooth integration between frontend, backend, and third-party services.</p>
-                <a href="#">Learn More</a>
-            </div>
-               <div>
-                 <i class="fa-solid fa-database"></i>
-                <h2>Database Design & Optimization</h2>
-                <p>Efficient database design and performance tuning using SQL Server and PostgreSQL for reliable and high-speed data handling.</p>
-                <a href="#">Learn More</a>
-            </div>
-             
         </div>
     </div>
-    </div>
-       <!-------------------------------------portfolio------------------------------------------------->
+    <!-------------------------------------portfolio------------------------------------------------->
 
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">My Work</h1>
-                <div class="work-list">
-                     <div class="work">
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
                     <img src="images/work1.png">
                     <div class="layer">
                         <h3>Expense Tracker Application</h3>
                         <p>
-                           A user-friendly expense tracking application that helps users record daily expenses,
-                            categorize spending, and monitor monthly budgets. The system provides summary reports and insights to improve financial management.
+                            A user-friendly expense tracking application that helps users record daily expenses,
+                            categorize spending, and monitor monthly budgets. The system provides summary reports and
+                            insights to improve financial management.
                             Designed with a clean UI and secure data handling.
                         </p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
 
                     </div>
-                     </div>
-                  <div class="work">
+                </div>
+                <div class="work">
                     <img src="images/work2.png">
-                     <div class="layer">
+                    <div class="layer">
                         <h3>Employee Onboarding Application </h3>
                         <p>
-                            A role-based employee onboarding system where newly joined employees receive automated joining emails and upload required documents. HR can manage onboarding processes, view employee profiles, documents, and generate reports. 
+                            A role-based employee onboarding system where newly joined employees receive automated
+                            joining emails and upload required documents. HR can manage onboarding processes, view
+                            employee profiles, documents, and generate reports.
                             The system ensures secure access using JWT-based authentication and authorization.
                         </p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
 
                     </div>
                 </div>
-                  <div class="work">
+                <div class="work">
                     <img src="images/work3.png">
-                     <div class="layer">
-                        <h3>Emp WEB API  Application </h3>
+                    <div class="layer">
+                        <h3>Emp WEB API Application </h3>
                         <p>
-                         A secure RESTful Web API developed to manage employee data with full CRUD operations. Implemented JWT authentication for role-based access and integrated Swagger for API documentation and testing. 
-                         Designed for scalability and seamless frontend integration.
+                            A secure RESTful Web API developed to manage employee data with full CRUD operations.
+                            Implemented JWT authentication for role-based access and integrated Swagger for API
+                            documentation and testing.
+                            Designed for scalability and seamless frontend integration.
                         </p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
 
                     </div>
                 </div>
-                  </div>
-                  <a href="#" class="btn">See More</a>
-                </div>
             </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+<!------------------------------------contact------------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-envelope"></i>mayurilugade2911@gmail.com</p>
+                <p><i class="fa fa-phone-square"></i>+91 9136235204</p>
+                    <div class="social-icons"><a href="https://github.com/Mayuri2911"><i class="fa-brands fa-github"></i> Github</a>
+                     <a href="https://www.linkedin.com/in/mayurilugade/">
+                     <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
+            <a href="images/Mayuri_Lugade_Resume.pdf" download class="btn btn2">Download CV</a>
+                 
+                </div>
+      
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet"> 
+                        <input type="text" name="Name" placeholder="Please Enter Name" Required>
+                            <input type="Email" name="Email" placeholder="Please Enter Email" Required>
+                               <textarea name="Message" rows="6" placeholder="Please Enter Message"></textarea>
+                               <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                <span id="msg"></span>
+                </div>
+        </div>
+      </div>
+    </div>
+<div class="copyright">
+<p>© 2026 Mayuri Lugade. Made with <i class="fa-solid fa-heart"></i></p>
+
+
+</div>
+</div>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-content");
@@ -209,12 +256,38 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
 
-
-
-      
-
     </script>
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openemenu(){
+        sidemenu.style.right="0";
+    }
+     function closemenu(){
+        sidemenu.style.left="-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzFYeyqj5SHXheZBlQHAka9EtHTd_DrNsTRcmJM_91Qsm0f4WdomBspsPgahXmxJN0H/exec'
+  const form = document.forms['submit-to-google-sheet']
 
+  const msg = document.getElementById("msg");
+
+   form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully!"
+        setTimeout(() => msg.innerHTML = "", 5000)
+        form.reset()
+      })
+      .catch(error => {
+        msg.innerHTML = "Something went wrong!"
+        msg.style.color = "red"
+      })
+  })
+
+
+</script>
 </body>
 
 </html>
